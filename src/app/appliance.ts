@@ -3,4 +3,6 @@ export class Appliance {
   name: string;
   code: string;
   status: string;
+  brightness: number;
+  dtype: string;
 }
