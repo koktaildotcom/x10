@@ -8,13 +8,6 @@ export class ApplianceService {
     return Promise.resolve(appliance);
   }
 
-  getAppliancesSlowly(): Promise<Appliance[]> {
-    return new Promise(resolve => {
-      // Simulate server latency with 2 second delay
-      setTimeout(() => resolve(this.getAppliances()), 0);
-    });
-  }
-
   getAppliance(id: number): Promise<Appliance> {
     return this.getAppliances()
                .then(appliances => appliances.find(appliances => appliances.id === id));

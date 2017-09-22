@@ -6,10 +6,10 @@ import { ApplianceService } from './appliance.service';
 
 @Component({
   selector: 'my-appliances',
-  templateUrl: './appliance.component.html',
-  styleUrls: [ './appliance.component.css' ]
+  templateUrl: './appliance-list.component.html',
+  styleUrls: [ './appliance-list.component.css' ]
 })
-export class ApplianceComponent implements OnInit {
+export class ApplianceListComponent implements OnInit {
   appliances: Appliance[];
   selectedAppliance: Appliance;
 

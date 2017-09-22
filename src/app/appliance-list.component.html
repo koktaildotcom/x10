@@ -1,8 +1,13 @@
-<h2>My Appliances</h2>
+<h2>My list</h2>
 <ul class="appliances">
   <li *ngFor="let appliance of appliances"
     [class.selected]="appliance === selectedAppliance"
     (click)="onSelect(appliance)">
+
+    <md-switch ng-model="data.cb1" aria-label="Switch 1">
+      Switch 1: {{ data.cb1 }}
+    </md-switch>
+
     <span class="badge">{{appliance.id}}</span> {{appliance.name}}
   </li>
 </ul>
